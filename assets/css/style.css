@@ -1,5 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --text-font: 'Lato', sans-serif;
+  --title-font: 'Merriweather', serif;
+  --bg-color: #222831;
+  --primary-color: #F2A365;
+  --white-color: #fff;
+  --text-color: #E5E5E5;
+  --nav-bg: rgba(1, 1, 1, 0.53);
+  --line-color: #C4C4C4;
+  --grey-color: #B5B4B3;
+  --darker-blue: #1C2027;
+  --dark-line: #293B44;
+
+}
+
+#preloader {
+  background: var(--white-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.status {
+  background: url(../images/preloader.gif);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -140px;
+  margin-top: -117px;
+}
+
+/* PRELOADER ENDS */
+
+/* HEADER STARTS */
+.main-head {
+  background: linear-gradient(90deg, rgba(1, 1, 1, 0.81) 27.46%, rgba(1, 1, 1, 0.47) 50%), url(../images/header-bg.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1px;
+  background-position: bottom;
+
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-family: var(--text-font);
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.nav-link:focus {
+  color: var(--primary-color);
+}
+
+.navbar {
+  background: var(--nav-bg);
+  max-height: 116px;
+}
+
+/* Hero section begins */
+.hero {
+  margin-top: 33%;
+}
+
+.hero-text {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-family: var(--text-font);
+  font-size: 0.875rem;
+  line-height: 17px;
+}
+
+.hero-title {
+  color: var(--text-color);
+  font-weight: bold;
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+
+.all-btn {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  font-size: 0.625rem;
+  font-family: var(--title-font);
+  width: 75px;
+  height: 25px;
+}
+
+.name-tag {
+  margin-top: 26%;
+  margin-bottom: 9%;
+}
+
+.name-text {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-family: var(--text-font);
+  font-weight: normal;
+}
+
+.innername {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-family: var(--text-font);
+  font-weight: normal;
+}
+
+.line1 {
+  background: var(--line-color);
+  width: 96px;
+  height: 11px;
+}
+
+.line2 {
+  background: var(--line-color);
+  width: 22px;
+  height: 11px;
+}
+
+/* Service starts here */
+.service {
+  background: var(--bg-color);
+  padding: 1px;
+
+}
+
+.service-title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  line-height: 30px;
+  font-family: var(--title-font);
+}
+
+.service-text,
+.review-text,
+.ach-text,
+.ach-icon-text {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-family: var(--text-font);
+  line-height: 17px;
+  font-weight: normal;
+}
+
+.img-text {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--text-font);
+  line-height: 19px;
+}
+
+.first-img {
+  width: 100%;
+}
+
+/* Achievement starts here */
+
+.achievement {
+  background-image: url(../images/ach-img.png);
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1px;
+  filter: brightness(0.9);
+  background-position: -799px 0px;
+}
+
+.ach-icon-title {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 20px;
+  font-family: var(--title-font);
+}
+
+.ach-icon-text {
+  font-weight: bold;
+}
+
+/* achievement section ends here */
+
+/* Review section starts here */
+.review,
+.contact {
+  background: var(--bg-color);
+  padding: 1px;
+  position: relative;
+}
+
+
+.sec2 {
+  position: relative;
+}
+
+.sec2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-bottom: 11px solid var(--primary-color);
+  left: 4%;
+  top: -8%;
+  width: 167px;
+}
+
+.quote {
+  width: 4%;
+  margin-left: 94%;
+}
+
+.client-review {
+  background: var(--darker-blue);
+  margin-top: 70%;
+  position: relative;
+}
+
+.username {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-family: var(--text-font);
+}
+
+.surname {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--text-font);
+}
+
+.review-wrap {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.review-img {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 26%;
+}
+
+.review-pic {
+  width: 100%;
+}
+
+.line3 {
+  background: var(--dark-line);
+}
+
+/* Contact section starts here */
+.contact-section {
+  background-image: url(../images/bg--contact.png);
+  background-color: var(--bg-color);
+}
+
+.form-control {
+  background: transparent;
+  border: 2px solid var(--line-color);
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-size: 0.875rem;
+  font-weight: 300;
+
+}
+
+.form-control::placeholder {
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.select.selected {
+  background-color: transparent;
+}
+
+.form-control:focus,
+.form-control:active,
+.form-control:focus-within,
+.form-control:hover {
+  border-color: var(--line-color);
+  box-shadow: none;
+  background: transparent;
+}
+
+/* contact ends here */
+/* footer begins */
+.footer {
+  background: var(--darker-blue);
+  padding: 1px;
+}
+
+.foot-text,
+.copy-text {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--text-font);
+  line-height: 19px;
+  color: var(--text-color);
+}
+
+hr {
+  border: 1px solid var(--line-color);
+}
+
+.copy-text {
+  font-size: 0.875rem;
+}
+
+.media {
+  width: 12%;
+}
+
+.logo-pic {
+  width: 38%;
 }
