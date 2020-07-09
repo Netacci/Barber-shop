@@ -105,6 +105,11 @@
   font-family: var(--title-font);
   width: 75px;
   height: 25px;
+  transition: all .3s linear;
+}
+
+.all-btn:hover {
+  color: var(--line-color);
 }
 
 .name-tag {
