@@ -15,3 +15,9 @@ $(window).on("load", function () {
   $(".status").fadeOut();
   $("#preloader").delay(500).fadeOut();
 });
+
+$(document).on("click", ".navbar-collapse", function (e) {
+  if ($(e.target).is("a")) {
+    $(this).collapse("hide");
+  }
+});

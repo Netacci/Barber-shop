@@ -77,7 +77,11 @@
 }
 
 
-.active {
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
   color: var(--primary-color);
 }
 
@@ -89,6 +93,7 @@
 .navbar.navscroll {
   background: var(--nav-bg);
   max-height: 116px;
+  z-index: 10;
 }
 
 /* Hero section begins */

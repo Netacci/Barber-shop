@@ -132,6 +132,8 @@
 }
 
 @media all and (min-width:992px) {
+
+
   .navbar-collapse {
     background: none;
   }
