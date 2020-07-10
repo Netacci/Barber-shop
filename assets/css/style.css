@@ -319,6 +319,15 @@ input[type=time].form-control {
   -webkit-appearance: auto;
 }
 
+input[type="date"]::before {
+  color: var(--dark-line);
+  content: attr(placeholder) ": ";
+}
+
+input[type="date"]:focus::before {
+  content: "" !important;
+}
+
 .form-control::placeholder {
   color: var(--dark-line);
   font-family: var(--text-font);
