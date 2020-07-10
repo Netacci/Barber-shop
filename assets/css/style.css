@@ -316,6 +316,7 @@ input[type=month].form-control,
 input[type=time].form-control {
   color: var(--dark-line);
   appearance: auto;
+  -webkit-appearance: auto;
 }
 
 .form-control::placeholder {
