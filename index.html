@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navactive" data-offset="50"> 
     <!-- Preloader starts -->
     <div id="preloader" class="preloader">
       <div class="status"></div>
@@ -35,9 +35,9 @@
     <!-- Preloader ends -->
 
     <!-- Header starts here -->
-    <header class="main-head">
+    <header class="main-head" id="home">
       <!-- Nav starts here -->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <nav id="navactive" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container mt-lg-3 mb-lg-3">
           <a style="font-family: HaloHandletter;" class="navbar-brand" href="#">
             <img
@@ -61,8 +61,8 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item mr-0 mr-lg-5">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item mr-0 mr-lg-5 ">
+                <a class="nav-link active" href="#home">Home</a>
               </li>
               <li class="nav-item mr-0 mr-lg-5">
                 <a class="nav-link menu-item-2" href="#services">My Services</a>
@@ -80,6 +80,7 @@
           </div>
         </div>
       </nav>
+     
       <!-- Nav ends here -->
 
       <!-- Hero section begins here -->

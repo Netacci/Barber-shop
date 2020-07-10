@@ -45,6 +45,9 @@
 }
 
 /* PRELOADER ENDS */
+body {
+  position: relative;
+}
 
 /* HEADER STARTS */
 .main-head {
