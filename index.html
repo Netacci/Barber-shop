@@ -23,6 +23,7 @@
     <!-- CSS links-->
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
@@ -36,7 +37,7 @@
     <!-- Header starts here -->
     <header class="main-head">
       <!-- Nav starts here -->
-      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container mt-lg-3 mb-lg-3">
           <a style="font-family: HaloHandletter;" class="navbar-brand" href="#">
             <img
@@ -61,16 +62,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item mr-0 mr-lg-5">
-                <a class="nav-link menu-item-1" href="#home">Home</a>
+                <a class="nav-link menu-item-1" href="#">Home</a>
               </li>
               <li class="nav-item mr-0 mr-lg-5">
                 <a class="nav-link menu-item-2" href="#services">My Services</a>
               </li>
               <li class="nav-item mr-0 mr-lg-5">
-                <a class="nav-link menu-item-3" href="#reviews">Reviews</a>
+                <a class="nav-link menu-item-2" href="#achievement">Achievements</a>
+              </li>
+              <li class="nav-item mr-0 mr-lg-5">
+                <a class="nav-link menu-item-3" href="#review">Reviews</a>
               </li>
               <li class="nav-item mr-0">
-                <a class="nav-link menu-item-5" href="#contact">Contact me</a>
+                <a class="nav-link menu-item-4" href="#contact">Contact me</a>
               </li>
             </ul>
           </div>
@@ -82,18 +86,20 @@
       <div class="hero">
         <div class="container mb-5">
           <div class="d-flex justify-content-between">
-            <div class="style">
+            <div class="style wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
               <h3 class="hero-text text-uppercase">
                 I know the cut that fits you
               </h3>
               <h1 class="hero-title text-capitalize">
                 I style your style
               </h1>
-              <button class="btn all-btn hero-btn mt-5 text-capitalize">
+              <button class="btn all-btn hero-btn mt-5 text-center text-capitalize">
                 Hire me
               </button>
             </div>
-            <div class="name-tag">
+            <div class="name-tag"  data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-duration="800" >
               <h3 class="name-text text-capitalize">
                 Jordie
               </h3>
@@ -115,16 +121,16 @@
     <!-- Header ends here -->
 
     <!-- Service section starts here -->
-    <section class="service">
+    <section class="service" id="services">
       <div class="container">
-        <div class="icon-img text-center mt-5">
+        <div class="icon-img text-center mt-3">
           <img
             src="./assets/images/Scisor-sep.svg"
             alt="icon"
             class="service-icon"
             loading="lazy"
           />
-          <h3 class="service-title text-capitalize mt-5">my services</h3>
+          <h3 class="service-title text-capitalize mt-3">my services</h3>
           <p class="service-text">
             I offer wide range of male grooming services under one roof
           </p>
@@ -132,7 +138,7 @@
         <div
           class="service-images d-flex flex-column flex-md-row text-center mt-4 mt-lg-5"
         >
-          <div class="img-card mr-md-3">
+          <div class="img-card mr-md-3" data-aos="fade-up" data-aos-duration="500">
             <img
               src="./assets/images/service-pic-1.png"
               alt=""
@@ -141,7 +147,7 @@
             />
             <p class="img-text mt-2">Beard Trim</p>
           </div>
-          <div class="img-card mr-md-3">
+          <div class="img-card mr-md-3" data-aos="fade-up" data-aos-delay="500">
             <img
               src="./assets/images/service-pic-2.png"
               alt=""
@@ -150,7 +156,7 @@
             />
             <p class="img-text mt-2">Hair Colouring</p>
           </div>
-          <div class="img-card">
+          <div class="img-card" data-aos="fade-up" data-aos-delay="1000">
             <img
               src="./assets/images/service-pic-3.png"
               alt=""
@@ -164,16 +170,16 @@
     </section>
     <!-- Service section ends here -->
     <!-- Achievement section starts here -->
-    <section class="achievement">
+    <section class="achievement" id="achievement">
       <div class="container">
-        <div class="icon-img text-center mt-5">
+        <div class="icon-img text-center mt-3">
           <img
             src="./assets/images/Beard-sep.svg"
             alt="icon"
             class="ach-stop-icon"
             loading="lazy"
           />
-          <h3 class="service-title text-capitalize mt-5">
+          <h3 class="service-title text-capitalize mt-3">
             achievements
           </h3>
           <p class="ach-text mx-auto">
@@ -187,7 +193,7 @@
         <div
           class="ach-images mt-3 mb-4 mb-lg-5 pt-lg-5 d-flex text-center flex-column flex-md-row justify-content-md-between"
         >
-          <div class="img-card mt-3 mt-md-0">
+          <div class="img-card mt-3 mt-md-0" data-aos="fade-right" data-aos-duration="500">
             <img
               src="./assets/images/abt-me1.svg"
               alt=""
@@ -197,7 +203,7 @@
             <p class="ach-icon-title mb-0">200+</p>
             <p class="ach-icon-text text-capitalize">Cute Hair Styles</p>
           </div>
-          <div class="img-card mt-3 mt-md-0">
+          <div class="img-card mt-3 mt-md-0" data-aos="fade-up" data-aos-delay="1000">
             <img
               src="./assets/images/abtme-2.svg"
               alt=""
@@ -207,7 +213,7 @@
             <p class="ach-icon-title mb-0">4000+</p>
             <p class="ach-icon-text text-capitalize">Satisfied Clients</p>
           </div>
-          <div class="img-card mt-3 mt-md-0">
+          <div class="img-card mt-3 mt-md-0" data-aos="fade-down" data-aos-delay="500">
             <img
               src="./assets/images/abtme3.svg"
               alt=""
@@ -222,16 +228,16 @@
     </section>
     <!-- Achievement section ends here -->
     <!-- Review section starts here -->
-    <section class="review">
+    <section class="review" id="review">
       <div class="container review-wrap">
-        <div class="icon-img text-center mt-5">
+        <div class="icon-img text-center mt-3">
           <img
             src="./assets/images/Beard-sep.svg"
             alt="icon"
             class="ach-stop-icon"
             loading="lazy"
           />
-          <h3 class="service-title text-capitalize mt-5">
+          <h3 class="service-title text-capitalize mt-3">
             happy clients
           </h3>
           <p class="review-text mb-5">
@@ -241,7 +247,7 @@
         <div class="client-review d-flex">
           <div class="sec1 d-none d-md-block col-md-6"></div>
           <div class="sec2 col-12 col-md-6 mt-5">
-            <p class="review-text text-center text-md-left mt-3">
+            <p class="review-text text-center text-md-left mt-3 wow animate__fadeIn" data-wow-duration="3s">
               Service is very good, reasonable rate and awsome sense of
               creativity compared to most top proffesional hair stylists. He has
               a mild touch but gives nothing but the bestto ehance oce looks
@@ -256,7 +262,7 @@
           <div class="line2 line3 mr-2"></div>
           <div class="line2 line3"></div>
         </div>
-        <div class="review-img">
+        <div class="review-img" data-aos="fade-down" data-aos-duration="1000">
           <img
             src="./assets/images/reviews.png"
             alt="picture"
@@ -268,29 +274,29 @@
     </section>
     <!-- Reviews end here -->
     <!-- Contact section begins here -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
-        <div class="icon-img text-center mt-5">
+        <div class="icon-img text-center mt-3">
           <img
             src="./assets/images/Scisor-sep.svg"
             alt="icon"
             class="ach-stop-icon"
             loading="lazy"
           />
-          <h3 class="service-title text-capitalize mt-5">
+          <h3 class="service-title text-capitalize mt-3">
             I am available
           </h3>
-          <p class="review-text mb-5">
+          <p class="review-text mb-3">
             Contact/Hire me for all your hair care needs
           </p>
         </div>
       </div>
       <div class="contact-section">
         <div class="container d-flex justify-content-between">
-          <div class="contact-img d-none d-lg-flex col-lg-6">
-            <img src="./assets/images/hair-clip.png" alt="" class="clip" />
+          <div class="contact-img d-none d-lg-flex col-lg-6 ">
+            <img src="./assets/images/hair-clip.png" alt="" class="clip wow clipmove" data-wow-duration="3s" loading="lazy"/>
           </div>
-          <form class="form-wrap col-lg-6 mt-5 mx-auto my-lg-auto">
+          <form class="form-wrap col-lg-6 mt-5 mx-auto my-lg-auto" data-aos="fade-up" data-aos-duration="1000">
             <div class="row form-row">
               <div class="col-12 col-lg-6">
                 <input
@@ -343,8 +349,8 @@
                   required
                 />
               </div>
-              <button class="btn all-btn form-btn mt-3 mt-md-5 text-capitalize mx-auto mb-5">
-                Hire me
+              <button class="btn all-btn form-btn mt-3 mt-md-5 text-capitalize text-center mx-auto mb-5">
+                Book now
               </button>
         </div>
       </div>
@@ -352,18 +358,18 @@
     <!-- contact section ends here -->
     <!-- footer begins here -->
     <footer class="footer text-center">
-      <div class="container mt-5">
-        <div class="foot-logo">
+      <div class="container mt-5" >
+        <div class="foot-logo" data-aos="fade-up" data-aos-duration="1000">
           <img src="./assets/images/footer-logo.svg" alt="logo" class="logo-pic" loading="lazy">
         </div>
         <div class="foot-address mt-4">
-          <p class="foot-text addy">KKD Close 13445GH  Huston Texas</p>
-          <p class="foot-text tel">Phone: +1 409 222 443</p>
+          <p class="foot-text addy" data-aos="fade-down" data-aos-duration="1000" >KKD Close 13445GH Welsley close Wellbourne,Huston Texas</p>
+          <p class="foot-text tel" data-aos="fade-right" data-aos-duration="1000">Phone: +1 409 222 443</p>
           <img src="./assets/images/abtme3.svg" alt="" class="foot-pic d-none d-md-block">
-          <p class="foot-text mail">Email:jordiestallion@gmail.com</p>
+          <p class="foot-text mail" data-aos="fade-right" data-aos-duration="1000">Email:jordiestallion@gmail.com</p>
   
         </div>
-        <div class="socials d-flex justify-content-center mt-4 mb-3">
+        <div class="socials d-flex justify-content-center mt-4 mb-3" >
           <img src="./assets/images/fb.svg" alt="icon" class="media mr-3" loading="lazy">
           <img src="./assets/images/Twitter.svg" alt="icon" class="media mr-3" loading="lazy">
           <img src="./assets/images/Linkedin.svg" alt="icon" class="media" loading="lazy">
@@ -375,6 +381,12 @@
 
 
       </div>
+      <a href="#" id="topscroll" class="top-scroll"
+              ><img
+                src="./assets/images/scroll.svg"
+                alt="scrollup"
+                class="arrow"
+            /></a>
      
     </footer>
 
@@ -385,6 +397,10 @@
     <script src="./assets/js/popper/popper.min.js"></script>
     <!-- Bootstrap -->
     <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- wow js -->
+    <script src="./assets/js/wow.min.js"></script>
+    <!-- aos js -->
+    <script src="./assets/js/aos.js"></script>
     <!-- Custom JS -->
     <script src="./assets/js/main.js"></script>
   </body>
