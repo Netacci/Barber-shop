@@ -310,23 +310,17 @@
 
 }
 
-input[type=date].form-control,
-input[type=datetime-local].form-control,
-input[type=month].form-control,
-input[type=time].form-control {
-  color: var(--dark-line);
-  appearance: auto;
-  -webkit-appearance: auto;
-}
-
-input[type="date"]::before {
+input[type="date"]::before,
+input[type="time"]::before {
   color: var(--dark-line);
   content: attr(placeholder) ": ";
 }
 
-input[type="date"]:focus::before {
+input[type="date"]:focus::before,
+input[type="time"]:focus::before {
   content: "" !important;
 }
+
 
 .form-control::placeholder {
   color: var(--dark-line);
