@@ -15,10 +15,23 @@
 
   /* Review starts here */
 
-  .review-img {
-    width: 32%;
-    left: 9%;
-    top: 27%;
+  .review-img1 {
+    left: 16%;
+    top: 5%;
+  }
+
+  .review-img3 {
+    left: 44%;
+    top: 5%;
+  }
+
+  .review-img2 {
+    left: 30%;
+    top: 5%;
+  }
+
+  .review-pic {
+    width: 10%;
   }
 
   .quote {
@@ -206,10 +219,10 @@
   }
 
   /* Review starts here */
-  .review-img {
-    width: auto;
-    left: 9%;
-    top: 25%;
+  .review-img1,
+  .review-img2,
+  .review-img3 {
+    width: 8%;
   }
 
   .client-review {
@@ -220,17 +233,23 @@
     margin-bottom: 5rem;
   }
 
+  .items-review {
+    margin-bottom: 3rem;
+  }
+
+  .review-pic {
+    width: 55%;
+  }
+
   /* Contact section starts here */
   .clip {
     transform: rotate(-156.07deg);
-  }
-
-  /* animation */
-  .clip {
+    width: 100%;
+    padding-left: 4rem;
     animation: clipmove 3s linear;
+    width: 85%;
+    height: 79%;
   }
-
-
 
   @keyframes clipmove {
     0% {

@@ -200,9 +200,35 @@ body {
   line-height: 19px;
 }
 
+.slider {
+  width: 100%;
+}
+
+.items {
+  text-align: center;
+  outline: 0;
+}
+
 .first-img {
   width: 100%;
 }
+
+.slick-dots li {
+  width: 15px;
+  height: 15px;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+
+.slick-dots li button:before {
+  font-size: 26px;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  color: var(--grey-color);
+}
+
+
 
 /* Achievement starts here */
 
@@ -238,6 +264,10 @@ body {
   position: relative;
 }
 
+.items-review {
+  width: 100%;
+}
+
 
 .sec2 {
   position: relative;
@@ -260,7 +290,7 @@ body {
 
 .client-review {
   background: var(--darker-blue);
-  margin-top: 68%;
+  margin-top: 53%;
   position: relative;
 }
 
@@ -282,15 +312,30 @@ body {
   position: relative;
 }
 
-.review-img {
+.review-img3 {
   position: absolute;
   width: 50%;
-  left: 25%;
-  top: 21%;
+  left: 46%;
+  top: -8%;
+}
+
+.review-img1 {
+  position: absolute;
+  width: 50%;
+  left: 17%;
+  top: -8%;
+}
+
+.review-img2 {
+  position: absolute;
+  width: 50%;
+  left: 32%;
+  top: -8%;
+
 }
 
 .review-pic {
-  width: 100%;
+  width: 16%;
 }
 
 .line3 {
@@ -301,6 +346,7 @@ body {
 .contact-section {
   background-image: url(../images/bg--contact.png);
   background-color: var(--bg-color);
+  padding: 1px;
 }
 
 .form-control {
@@ -310,6 +356,8 @@ body {
   font-family: var(--text-font);
   font-size: 0.875rem;
   font-weight: 300;
+  height: 66px;
+  width: 345px;
 
 }
 
