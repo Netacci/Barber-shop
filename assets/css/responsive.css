@@ -61,6 +61,13 @@
     left: -22%;
   }
 
+  /* contact */
+  .form-control {
+    width: 100%;
+
+  }
+
+
   /* footer starts here */
   .media {
     width: auto;
@@ -242,6 +249,12 @@
   }
 
   /* Contact section starts here */
+
+  .form-control {
+    width: 345px;
+
+  }
+
   .clip {
     transform: rotate(-156.07deg);
     width: 100%;

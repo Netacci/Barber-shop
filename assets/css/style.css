@@ -56,7 +56,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1px;
-  background-position: bottom;
+  background-position: top;
+  background-attachment: fixed;
 
 
 }
@@ -239,7 +240,8 @@ body {
   background-size: cover;
   padding: 1px;
   filter: brightness(0.9);
-  background-position: -799px 0px;
+  background-position: -345px 0px;
+  background-attachment: fixed;
 }
 
 .ach-icon-title {
@@ -347,6 +349,9 @@ body {
   background-image: url(../images/bg--contact.png);
   background-color: var(--bg-color);
   padding: 1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .form-control {
